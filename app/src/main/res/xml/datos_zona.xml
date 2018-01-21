@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Datos de Zona">
+
+        <Preference
+            android:defaultValue="0"
+            android:editable="false"
+            android:key="edit_text_id_zona"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Código Zona"
+            android:summary="Código Zona"  />
+
+        <EditTextPreference
+            android:defaultValue=" "
+            android:inputType="text"
+            android:key="edit_text_nombre_zona"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Nombre de zona"
+            android:title="Nombre" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Dirección">
+
+        <EditTextPreference
+            android:defaultValue=" "
+            android:key="edit_text_domicilio_zona"
+            android:inputType="textPostalAddress"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Domicilio de Zona"
+            android:title="Domicilio" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
